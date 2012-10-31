@@ -3,6 +3,7 @@
 			<div id="content" class="clearfix row-fluid">
 			
 				<div id="main" class="span8 clearfix" role="main">
+					<div class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></div>
 				
 					<div class="page-header"><h1><span><?php _e("Search Results for","bonestheme"); ?>:</span> <?php echo esc_attr(get_search_query()); ?></h1></div>
 

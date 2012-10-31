@@ -3,6 +3,7 @@
 			<div id="content" class="clearfix row-fluid">
 			
 				<div id="main" class="span8 clearfix" role="main">
+					<div class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></div>
 				
 					<div class="page-header"><h1 class="archive_title h2">
 						<span><?php _e("Posts By:", "bonestheme"); ?></span> 

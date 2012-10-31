@@ -11,6 +11,7 @@ Template Name: Left Sidebar Page
             	<?php get_sidebar(); // sidebar 1 ?>
 			
 				<div id="main" class="span8 clearfix" role="main">
+					<div class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></div>
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					

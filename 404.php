@@ -3,6 +3,7 @@
 			<div id="content" class="clearfix row-fluid">
 			
 				<div id="main" class="span12 clearfix" role="main">
+					<div class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></div>
 
 					<article id="post-not-found" class="clearfix">
 						
