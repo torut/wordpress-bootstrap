@@ -11,8 +11,8 @@
 
 							<div class="hero-unit">
 							
-								<h1>Epic 404 - Article Not Found</h1>
-								<p>This is embarassing. We can't find what you were looking for.</p>
+								<h1><?php _e("Epic 404 - Article Not Found","bonestheme"); ?></h1>
+								<p><?php _e("This is embarassing. We can't find what you were looking for.","bonestheme"); ?></p>
 															
 							</div>
 													
@@ -20,7 +20,7 @@
 					
 						<section class="post_content">
 							
-							<p>Whatever you were looking for was not found, but maybe try looking again or search using the form below.</p>
+							<p><?php _e("Whatever you were looking for was not found, but maybe try looking again or search using the form below.","bonestheme"); ?></p>
 
 							<div class="row-fluid">
 								<div class="span12">
