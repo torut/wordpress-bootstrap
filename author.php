@@ -3,7 +3,7 @@
 			<div id="content" class="clearfix row">
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
-					<div class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></div>
+					<ol class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
 				
 					<div class="page-header"><h1 class="archive_title h2">
 						<span><?php _e("Posts By:", "wpbootstrap"); ?></span> 

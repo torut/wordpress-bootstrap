@@ -3,7 +3,7 @@
 			<div id="content" class="clearfix row">
 			
 				<div id="main" class="col col-lg-8 clearfix" role="main">
-					<div class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></div>
+					<ol class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
 				
 					<div class="page-header"><h1><span><?php _e("Search Results for","wpbootstrap"); ?>:</span> <?php echo esc_attr(get_search_query()); ?></h1></div>
 
