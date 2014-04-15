@@ -3,7 +3,7 @@
 			<div id="content" class="clearfix row">
 			
 				<div id="main" class="col col-lg-8 clearfix" role="main">
-					<ol class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
+					<ol class="breadcrumb"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					

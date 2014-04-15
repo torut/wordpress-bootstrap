@@ -3,7 +3,7 @@
 			<div id="content" class="clearfix row">
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
-					<ol class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
+					<ol class="breadcrumb"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
 				
 					<div class="page-header">
 					<?php if (is_category()) { ?>
