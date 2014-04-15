@@ -1,26 +1,28 @@
-WP-BOOTSTRAP
+WP BOOTSTRAP
 ===================
 
-Bootstrap (http://twitter.github.io/bootstrap) in Wordpress theme form. Using Eddie Machado's Bones for a starting point (https://github.com/eddiemachado/bones). 
+Bootstrap (http://getbootstrap.com) in WordPress theme form. 
+
+Used Eddie Machado's Bones for a starting point (https://github.com/eddiemachado/bones) but it doesn't look too much like it any longer. 
 
 FEATURES
 ________
 
-We’ve built the WP-Bootstrap theme so that it could be used as-is or as a starting point for theme developers. It’s built on top of the brilliant Bones theme framework by Eddie Machado and based on v2.3.1 of Bootstrap.
+We’ve built the WP Bootstrap theme so that it could be used as-is as a very basic theme or as a starting point for theme developers. It’s built on top of the Bones theme framework by Eddie Machado and based on v3.0.3 of Bootstrap.
 
-Star this project on Github to keep up with its progress.
+Watch or star this project to keep up with its progress.
 
-Responsive
-__________
+Multi-Lingual
+_____________
 
-We stick as closely as possible to bootstrap so this thing is natually responsive. 
+WP-Bootstrap is translated in 4 languages - Spanish, French, Portuguese and German. 
 
 Page Templates
 ______________
 
 We’ve packaged four different page templates into this theme.
 
-    - Homepage template (seen on the homepage of this site)
+    - Homepage template (seen on the homepage of this site - http://www.320press.com/wp-bootstrap)
     - Standard page with right sidebar (this page)
     - Page with left sidebar
     - Full width page
@@ -28,14 +30,21 @@ We’ve packaged four different page templates into this theme.
 Theme Options Panel
 ___________________
 
-Want to change some colors? Want the top nav to scroll with the content? Hide the search box in the top nav? Do it in the options panel.
+We've removed the custom theme options panel in version 3.0. Currently working on moving all of the options that used to appear there over to the theme customizer. 
 
 Shortcodes
 __________
 
-We’ve built in some shortcodes so you can easily add UI elements found in Twitter Bootstrap.
+We’ve built in some shortcodes so you can easily add UI elements found in Bootstrap.
 
 Sidebars
 ________
 
-We’ve built in two different sidebars. One for the homepage and one for the other pages. Add widgets to them.
+There are two different sidebars. One for the homepage and one for the other pages. Add widgets to them.
+
+CONTRIBUTE!
+___________
+
+This project would not exist in its current state today were it not for lots of generous folks who have contributed to it. Thank you! 
+
+If you'd like to commit to this project please submit a pull request and I will do my best to merge appropriately.
