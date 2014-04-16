@@ -3,7 +3,9 @@
 			<div id="content" class="clearfix row">
 			
 				<div id="main" class="col-sm-8 clearfix" role="main">
+				<?php if (!is_home()) : ?>
 					<ol class="breadcrumb"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
+				<?php endif ?>
 
 					<?php if (have_posts()) : $cnt = 0; while (have_posts()) : the_post(); $cnt++; ?>
 					
