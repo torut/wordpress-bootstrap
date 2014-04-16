@@ -5,17 +5,25 @@
 				<div id="main" class="col-sm-8 clearfix" role="main">
 					<ol class="breadcrumb"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php if (have_posts()) : $cnt = 0; while (have_posts()) : the_post(); $cnt++; ?>
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 						
 						<header>
 						
-							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
+                          <div class="page-header clearfix">
+                            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array(96, 96), 'wpbs-featured' ); ?></a>
+                            <h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+                          </div>
 							
-							<div class="page-header"><h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1></div>
-							
-							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+<?php if (is_home() && $cnt == 1): ?>
+<div style="float: right; width: 250px; margin-left: 16px;">
+<?php include TEMPLATEPATH .  "/../first_post_ad.php"; ?>
+</div>
+<?php endif ?>
+
+							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate class="date"><?php the_time('Y-m-d H:i); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+                          <p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', ''); ?></p>
 						
 						</header> <!-- end article header -->
 					
@@ -25,8 +33,6 @@
 						
 						<footer>
 			
-							<p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', ''); ?></p>
-							
 						</footer> <!-- end article footer -->
 					
 					</article> <!-- end article -->
