@@ -13,12 +13,12 @@
 						
 							<div class="page-header clearfix">
 							  <?php the_post_thumbnail( 'wpbs-featured' ); ?>
-							  <h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>
+							  <h1 class="single-title entry-title" itemprop="headline"><?php the_title(); ?></h1>
                             </div>
 
 <?php include TEMPLATEPATH .  "/../individual_head_ad.php"; ?>
 
-							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-d H:i'); ?>" pubdate><?php the_date('Y-m-d H:i'); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-d H:i'); ?>" pubdate class="updated date"><?php the_date('Y-m-d H:i'); ?></time> <?php _e("by", "wpbootstrap"); ?> <span class="vcard author"><span class="fn"><?php the_author_posts_link(); ?></span></span> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
 							<?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', '</p>'); ?>
 						
 						</header> <!-- end article header -->

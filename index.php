@@ -13,7 +13,7 @@
 						
                           <div class="page-header clearfix">
                             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(array(96, 96), 'wpbs-featured' ); ?></a>
-                            <h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+                            <h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                           </div>
 							
 <?php if (is_home() && $cnt == 1): ?>
@@ -22,7 +22,7 @@
 </div>
 <?php endif ?>
 
-							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate class="date"><?php the_time('Y-m-d H:i'); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-d H:i'); ?>" pubdate class="updated date"><?php the_time('Y-m-d H:i'); ?></time> <?php _e("by", "wpbootstrap"); ?> <span class="vcard author"><span class="fn"><?php the_author_posts_link(); ?></span></span> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
                           <p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', ''); ?></p>
 						
 						</header> <!-- end article header -->

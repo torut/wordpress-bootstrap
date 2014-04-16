@@ -5,7 +5,7 @@
 				<div id="main" class="col-sm-8 clearfix" role="main">
 					<ol class="breadcrumb"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></ol>
 				
-					<div class="page-header"><h1 class="archive_title h2">
+					<div class="page-header"><h1 class="archive_title h2 entry-title">
 						<span><?php _e("Posts By:", "wpbootstrap"); ?></span> 
 						<?php 
 							// If google profile field is filled out on author profile, link the author's page to their google+ profile page
@@ -29,7 +29,7 @@
 							
 							<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 							
-							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-d H:i'); ?>" pubdate class="updated date"><?php the_time('Y-m-d H:i'); ?></time> <?php _e("by", "wpbootstrap"); ?> <span class="vcard author"><span class="fn"><?php the_author_posts_link(); ?></span></span> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
 						
 						</header> <!-- end article header -->
 					

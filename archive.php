@@ -7,27 +7,27 @@
 				
 					<div class="page-header">
 					<?php if (is_category()) { ?>
-						<h1 class="archive_title h2">
+						<h1 class="archive_title h2 entry-title">
 							<span><?php _e("Posts Categorized:", "wpbootstrap"); ?></span> <?php single_cat_title(); ?>
 						</h1>
 					<?php } elseif (is_tag()) { ?> 
-						<h1 class="archive_title h2">
+						<h1 class="archive_title h2 entry-title">
 							<span><?php _e("Posts Tagged:", "wpbootstrap"); ?></span> <?php single_tag_title(); ?>
 						</h1>
 					<?php } elseif (is_author()) { ?>
-						<h1 class="archive_title h2">
+						<h1 class="archive_title h2 entry-title">
 							<span><?php _e("Posts By:", "wpbootstrap"); ?></span> <?php get_the_author_meta('display_name'); ?>
 						</h1>
 					<?php } elseif (is_day()) { ?>
-						<h1 class="archive_title h2">
+						<h1 class="archive_title h2 wntry-title">
 							<span><?php _e("Daily Archives:", "wpbootstrap"); ?></span> <?php the_time('l, F j, Y'); ?>
 						</h1>
 					<?php } elseif (is_month()) { ?>
-					    <h1 class="archive_title h2">
+					    <h1 class="archive_title h2 entry-title">
 					    	<span><?php _e("Monthly Archives:", "wpbootstrap"); ?>:</span> <?php the_time('F Y'); ?>
 					    </h1>
 					<?php } elseif (is_year()) { ?>
-					    <h1 class="archive_title h2">
+					    <h1 class="archive_title h2 entry-title">
 					    	<span><?php _e("Yearly Archives:", "wpbootstrap"); ?>:</span> <?php the_time('Y'); ?>
 					    </h1>
 					<?php } ?>
@@ -41,7 +41,7 @@
 							
 							<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 							
-							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-d H:i'); ?>" pubdate class="updated date"><?php the_time('Y-m-d H:i'); ?></time> <?php _e("by", "wpbootstrap"); ?> <span class="vcard author"><span class="fn"><?php the_author_posts_link(); ?></span></span> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
 						
 						</header> <!-- end article header -->
 					
