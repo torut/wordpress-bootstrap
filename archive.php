@@ -47,7 +47,7 @@
 					
 						<section class="post_content">
 						
-							<?php the_post_thumbnail( 'wpbs-featured' ); ?>
+							<?php the_post_thumbnail(array(96, 96), 'wpbs-featured' ); ?>
 						
 							<?php the_excerpt(); ?>
 					

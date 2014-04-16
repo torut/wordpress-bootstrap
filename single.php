@@ -12,7 +12,7 @@
 						<header>
 						
 							<div class="page-header clearfix">
-							  <?php the_post_thumbnail( 'wpbs-featured' ); ?>
+							  <?php the_post_thumbnail(array(96, 96), 'wpbs-featured' ); ?>
 							  <h1 class="single-title entry-title" itemprop="headline"><?php the_title(); ?></h1>
                             </div>
 

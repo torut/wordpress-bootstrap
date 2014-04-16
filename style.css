@@ -21,3 +21,6 @@ img.wp-post-image {
     float: right;
 }
 
+.post img.wp-post-image.attachment-96x96 {
+    max-width: 96px !important;
+}
