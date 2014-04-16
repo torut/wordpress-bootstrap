@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 			
-			<div id="content" class="clearfix row-fluid">
+			<div id="content" class="clearfix row">
 			
 				<div id="main" class="span12 clearfix" role="main">
 					<div class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></div>
@@ -22,7 +22,7 @@
 							
 							<p><?php _e("Whatever you were looking for was not found, but maybe try looking again or search using the form below.","bonestheme"); ?></p>
 
-							<div class="row-fluid">
+							<div class="row">
 								<div class="span12">
 									<?php get_search_form(); ?>
 								</div>

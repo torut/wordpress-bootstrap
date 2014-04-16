@@ -584,7 +584,7 @@ blockquote.pull-left{
 	}
 	
 	.widget_search input{
-		width: 209px;
+		width: 180px;
 	}
 	
 	.comment .vcard .comment-text{
@@ -592,3 +592,17 @@ blockquote.pull-left{
 		padding-right: 0;
 	}
 }
+
+ol.breadcrumbs {
+    list-style: none;
+    margin-left: 0;
+    clear: both;
+}
+ol.breadcrumbs li {
+    float: left;
+}
+
+img.wp-post-image {
+    float: right;
+}
+

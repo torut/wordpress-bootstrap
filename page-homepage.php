@@ -6,7 +6,7 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 			
-			<div id="content" class="clearfix row-fluid">
+			<div id="content" class="clearfix row">
 			
 				<div id="main" class="span12 clearfix" role="main">
 					<div class="breadcrumbs"><?php if(function_exists('bcn_display')): bcn_display(); endif; ?></div>
@@ -90,7 +90,7 @@ Template Name: Homepage
 
 						</header>
 						
-						<section class="row-fluid post_content">
+						<section class="row post_content">
 						
 							<div class="span8">
 						
